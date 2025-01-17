@@ -13,8 +13,7 @@
   "main": "tailwind.config.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "git": "node -e \"const readline = require('readline'); const { exec } = require('child_process'); const rl = readline.createInterface({ input: process.stdin, output: process.stdout }); rl.question('Enter commit message: ', (message) => { rl.question('Enter branch name: ', (branch) => { exec(git add . && git commit -m \\\"${message}\\\" && git push -u origin ${branch}, (err, stdout, stderr) => { if (err) { console.error(Error: ${err.message}); } else { console.log(stdout); } rl.close(); }); }); });\""
+    "git": "node -e \"const readline = require('readline'); const { exec } = require('child_process'); const rl = readline.createInterface({ input: process.stdin, output: process.stdout }); rl.question('Enter commit message: ', (message) => { rl.question('Enter branch name: ', (branch) => { exec(`git add . && git commit -m \\\"${message}\\\" && git push -u deplo ${branch}`, (err, stdout, stderr) => { if (err) { console.error(`Error: ${err.message}`); } else { console.log(stdout); } rl.close(); }); }); });\""
   },
-  "author": "",
   "license": "ISC"
 }
