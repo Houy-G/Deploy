@@ -25,7 +25,7 @@ jspm_packages/
 
 # Ignore OS-specific files
 .DS_Store
-Thumbs.db# Logs
+Thumbs.db# Logse 
 logs
 *.log
 npm-debug.log*
