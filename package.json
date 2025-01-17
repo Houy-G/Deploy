@@ -1,0 +1,20 @@
+{
+  "dependencies": {
+    "express": "^4.21.2",
+    "openai": "^4.76.2",
+    "react-router-dom": "^6.28.0"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.17"
+  },
+  "name": "deploy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "git": "node -e \"const readline = require('readline'); const { exec } = require('child_process'); const rl = readline.createInterface({ input: process.stdin, output: process.stdout }); rl.question('Enter commit message: ', (message) => { rl.question('Enter branch name: ', (branch) => { exec(git add . && git commit -m \\\"${message}\\\" && git push -u origin ${branch}, (err, stdout, stderr) => { if (err) { console.error(Error: ${err.message}); } else { console.log(stdout); } rl.close(); }); }); });\""
+  },
+  "author": "",
+  "license": "ISC"
+}
